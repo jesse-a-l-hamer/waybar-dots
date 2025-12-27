@@ -1,0 +1,71 @@
+{
+  "network#hyde-bandwidth": {
+    "tooltip": true,
+
+    "format-alt": "<span size='small' foreground='#8bd5ca'>{bandwidthDownBytes}</span> <span size='small' foreground='#eed49f'>{bandwidthUpBytes}</span>",
+
+    "format-wifi": "<span size='small' foreground='#8bd5ca'>{bandwidthDownBytes}</span> <span size='small' foreground='#eed49f'>{bandwidthUpBytes}</span>",
+    "format-ethernet": "<span size='small' foreground='#8bd5ca'>{bandwidthDownBytes}</span> <span size='small' foreground='#eed49f'>{bandwidthUpBytes}</span>",
+
+    "rotate": 0,
+    "format-linked": "󰈀 {ifname} (No IP)",
+    "tooltip-format": "Network: <big><b>{essid}</b></big>\nSignal strength: <b>{signaldBm}dBm ({signalStrength}%)</b>\nFrequency: <b>{frequency}MHz</b>\nInterface: <b>{ifname}</b>\nIP: <b>{ipaddr}/{cidr}</b>\nGateway: <b>{gwaddr}</b>\nNetmask: <b>{netmask}</b>\nDownload: <b>{bandwidthDownBytes}</b>\nUpload: <b>{bandwidthUpBytes}</b>",
+
+    "format-disconnected": "󰖪 ",
+    "tooltip-format-disconnected": "Disconnected",
+    "interval": 2
+  },
+
+  "network#hyde-bandwidthUpBytes": {
+    "tooltip": true,
+
+    "format-alt": "<span size='small' foreground='#eed49f'>{bandwidthUpBytes}</span>",
+
+    "format-wifi": "<span size='small' foreground='#eed49f'>{bandwidthUpBytes}</span>",
+    "format-ethernet": "<span size='small' foreground='#eed49f'>{bandwidthUpBytes}</span>",
+
+    "rotate": 0,
+    "format-linked": "󰈀 {ifname} (No IP)",
+    "tooltip-format": "Network: <big><b>{essid}</b></big>\nSignal strength: <b>{signaldBm}dBm ({signalStrength}%)</b>\nFrequency: <b>{frequency}MHz</b>\nInterface: <b>{ifname}</b>\nIP: <b>{ipaddr}/{cidr}</b>\nGateway: <b>{gwaddr}</b>\nNetmask: <b>{netmask}</b>\nDownload: <b>{bandwidthDownBytes}</b>\nUpload: <b>{bandwidthUpBytes}</b>",
+
+    "format-disconnected": "󰖪 ",
+    "tooltip-format-disconnected": "Disconnected",
+    "interval": 2,
+    "class": "no-margin-padding"
+  },
+
+  "network#hyde-bandwidthDownBytes": {
+    "tooltip": true,
+
+    "format-alt": "<span size='small' foreground='#8bd5ca'>{bandwidthDownBytes}</span>",
+
+    "format-wifi": "<span size='small' foreground='#8bd5ca'>{bandwidthDownBytes}</span>",
+    "format-ethernet": "<span size='small' foreground='#8bd5ca'>{bandwidthDownBytes}</span>",
+
+    "rotate": 0,
+    "format-linked": "󰈀 {ifname} (No IP)",
+    "tooltip-format": "Network: <big><b>{essid}</b></big>\nSignal strength: <b>{signaldBm}dBm ({signalStrength}%)</b>\nFrequency: <b>{frequency}MHz</b>\nInterface: <b>{ifname}</b>\nIP: <b>{ipaddr}/{cidr}</b>\nGateway: <b>{gwaddr}</b>\nNetmask: <b>{netmask}</b>\nDownload: <b>{bandwidthDownBytes}</b>\nUpload: <b>{bandwidthUpBytes}</b>",
+
+    "format-disconnected": "󰖪 ",
+    "tooltip-format-disconnected": "Disconnected",
+    "interval": 2,
+    "class": "no-margin-padding"
+  },
+  "network#hyde-bandwidthTotalBytes": {
+    "tooltip": true,
+
+    "format-alt": "<span size='small' foreground='#8bd5ca'>{bandwidthTotalBytes}</span>",
+
+    "format-wifi": "<span size='small' foreground='#8bd5ca'>{bandwidthTotalBytes}</span>",
+    "format-ethernet": "<span size='small' foreground='#8bd5ca'>{bandwidthTotalBytes}</span>",
+
+    "rotate": 0,
+    "format-linked": "󰈀 {ifname} (No IP)",
+    "tooltip-format": "Network: <big><b>{essid}</b></big>\nSignal strength: <b>{signaldBm}dBm ({signalStrength}%)</b>\nFrequency: <b>{frequency}MHz</b>\nInterface: <b>{ifname}</b>\nIP: <b>{ipaddr}/{cidr}</b>\nGateway: <b>{gwaddr}</b>\nNetmask: <b>{netmask}</b>\nDownload: <b>{bandwidthDownBytes}</b>\nUpload: <b>{bandwidthUpBytes}</b>",
+
+    "format-disconnected": "󰖪 ",
+    "tooltip-format-disconnected": "Disconnected",
+    "interval": 2,
+    "class": "no-margin-padding"
+  }
+}

@@ -1,0 +1,55 @@
+// -*- mode: jsonc -*-
+{
+  "layer": "top",
+  "output": ["*"],
+  "position": "top",
+  "mode": "dock",
+  "exclusive": true,
+  "passthrough": false,
+  "reload_style_on_change": true,
+  "include": [ "$XDG_CONFIG_HOME/waybar/includes.jsonc" ],
+  // ? Groups per side
+  "modules-left": ["group/pill-right", "group/pill-in#left"],
+  "modules-center": ["group/pill-in#center"],
+  "modules-right": ["group/pill-in#right", "group/pill-left"],
+  //  ? Declaring the groups
+  "group/pill-right": {
+    "orientation": "inherit",
+    "modules": [
+      "hyprland/workspaces#hyde",
+      "wlr/taskbar#hyde",
+      "hyprland/window"
+    ]
+  },
+  "group/pill-in#left": {
+    "orientation": "inherit",
+    "modules": ["custom/media#hyde", "cava#hyde"]
+  },
+  "group/pill-in#center": {
+    "orientation": "inherit",
+    "modules": [ "clock", "custom/weather#hyde" ]
+  },
+  "group/pill-in#right": {
+    "orientation": "inherit",
+    "modules": ["tray#hyde"]
+  },
+  "group/pill-left": {
+    "orientation": "inherit",
+    "modules": [
+      "hyprland/submap",
+      "network#hyde",
+      "privacy#hyde",
+      "idle_inhibitor#hyde",
+      // "backlight",
+      "bluetooth#hyde",
+      "pulseaudio",
+      "cpu#hyde",
+      "memory#hyde",
+      // "battery",
+      "power-profiles-daemon",
+      "temperature",
+      "custom/dunst#hyde",
+      "custom/power#hyde"
+    ]
+  }
+}

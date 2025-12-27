@@ -1,0 +1,14 @@
+{
+  "idle_inhibitor#hyde": {
+    "format": "{icon}",
+    "rotate": 0,
+    "format-icons": {
+      "activated": "\udb80\udd76 ",
+      "deactivated": "\udb81\udeca "
+    },
+    "justify": "center",
+    "tooltip": "true",
+    "tooltip-format-activated": "<span foreground='#a6da95'>\udb80\udd76 Caffeine Mode Active</span>\nPrevents system from going to sleep",
+    "tooltip-format-deactivated": "<span foreground='#ed8796'>\udb81\udeca Caffeine Mode Inactive</span>\nSystem will follow normal power settings"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "custom/weather#hyde": {
+    "exec": "python $XDG_CONFIG_HOME/waybar/scripts/weather.py",
+    "tooltip": true,
+    "format": "{0}",
+    "interval": 900,
+    "return-type": "json"
+  }
+}

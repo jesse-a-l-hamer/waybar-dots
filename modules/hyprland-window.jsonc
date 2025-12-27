@@ -1,0 +1,8 @@
+{
+    "hyprland/window": {
+        "format": "{title} [{class}]",
+        "icon": false,
+        "tooltip-format": "{initialTitle} [{initialClass}]"
+    }
+}
+

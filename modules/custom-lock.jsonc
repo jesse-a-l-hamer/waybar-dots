@@ -1,0 +1,8 @@
+{
+    "custom/lock": {
+        "tooltip": false,
+        "on-click": "sh -c '(sleep 0.5s; app2unit -- hyprlock --grace 10)' & disown",
+        "format": ""
+    }
+}
+

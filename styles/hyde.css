@@ -1,0 +1,376 @@
+/* Color Palette */
+@import "palettes/catppuccin-macchiato.css";
+
+/* Set Colors */
+
+@define-color bar-bg rgba(24, 25, 38, 0.95);
+
+@define-color border-fg @flamingo;
+
+@define-color main-bg @base;
+@define-color main-fg @text;
+
+@define-color wb-hvr-bg @lavender;
+@define-color wb-hvr-fg @surface0;
+@define-color wb-act-bg @mauve;
+@define-color wb-act-fg @surface0;
+
+@define-color workspaces-button-hvr-bg @wb-hvr-bg;
+@define-color workspaces-button-hvr-fg @wb-hvr-fg;
+@define-color workspaces-button-act-bg @blue;
+@define-color workspaces-button-act-fg @wb-act-fg;
+
+@define-color taskbar-button-hvr-bg @wb-hvr-bg;
+@define-color taskbar-button-hvr-fg @wb-hvr-fg;
+@define-color taskbar-button-act-bg @maroon;
+@define-color taskbar-button-act-fg @wb-act-fg;
+
+/* Group Styles */
+
+/* Pill Styles */
+@import "groups/pill.css";
+@import "groups/pill-up.css";
+@import "groups/pill-right.css";
+@import "groups/pill-down.css";
+@import "groups/pill-left.css";
+@import "groups/pill-in.css";
+@import "groups/pill-out.css";
+/* Leaf Style */
+@import "groups/leaf.css";
+@import "groups/leaf-inverse.css";
+
+/* @import "includes/border-radius.css"; */
+@import "includes/global.css";
+
+/* Base HyDE Styles */
+
+window#waybar {
+    background: @bar-bg;
+}
+
+.module {
+    color: @main-fg;
+}
+
+/*
+ These are groups/islands configs
+
+*/
+#leaf,
+#leaf-inverse,
+#leaf-up,
+#leaf-down,
+#leaf-right,
+#leaf-left,
+#pill,
+#pill-right,
+#pill-left,
+#pill-down,
+#pill-up,
+#pill-in,
+#pill-out {
+    background-color: @main-bg;
+}
+
+window#waybar.right #leaf,
+window#waybar.left #leaf,
+window#waybar.right #leaf-inverse,
+window#waybar.left #leaf-inverse,
+window#waybar.right #leaf-up,
+window#waybar.left #leaf-up,
+window#waybar.right #leaf-down,
+window#waybar.left #leaf-down,
+window#waybar.right #leaf-right,
+window#waybar.left #leaf-right,
+window#waybar.right #leaf-left,
+window#waybar.left #leaf-left,
+window#waybar.right #pill,
+window#waybar.left #pill,
+window#waybar.right #pill-right,
+window#waybar.left #pill-right,
+window#waybar.right #pill-left,
+window#waybar.left #pill-left,
+window#waybar.right #pill-down,
+window#waybar.left #pill-down,
+window#waybar.right #pill-up,
+window#waybar.left #pill-up,
+window#waybar.right #pill-in,
+window#waybar.left #pill-in,
+window#waybar.right #pill-out,
+window#waybar.left #pill-out {
+    padding: 0em;
+}
+
+window#waybar.bottom #leaf,
+window#waybar.bottom #leaf-inverse,
+window#waybar.bottom #leaf-up,
+window#waybar.bottom #leaf-down,
+window#waybar.bottom #leaf-right,
+window#waybar.bottom #leaf-left,
+window#waybar.bottom #pill,
+window#waybar.bottom #pill-right,
+window#waybar.bottom #pill-left,
+window#waybar.bottom #pill-down,
+window#waybar.bottom #pill-up,
+window#waybar.bottom #pill-in,
+window#waybar.bottom #pill-out,
+window#waybar.top #leaf,
+window#waybar.top #leaf-inverse,
+window#waybar.top #leaf-up,
+window#waybar.top #leaf-down,
+window#waybar.top #leaf-right,
+window#waybar.top #leaf-left,
+window#waybar.top #pill,
+window#waybar.top #pill-right,
+window#waybar.top #pill-left,
+window#waybar.top #pill-down,
+window#waybar.top #pill-up,
+window#waybar.top #pill-in,
+window#waybar.top #pill-out {
+    padding: 0em 1em;
+}
+
+window#waybar.top #pill-in {
+    border-width: 0em 0.1em;
+    margin: 0em 1em 0.2em;
+}
+
+window#waybar.top #pill-left {
+    border-radius: 0 0 0 10pt;
+    border-width: 0em 0em 0em 0.1em;
+    margin: 0em 0em 0.2em 1em;
+    padding-right: 0.1em;
+}
+
+window#waybar.top #pill-right {
+    border-radius: 0 0 10pt 0;
+    border-width: 0em 0.1em 0em 0em;
+    margin: 0em 1em 0.2em 0em;
+    padding-left: 0.1em;
+}
+
+#workspaces {
+    margin-right: 0.5em;
+}
+
+#workspaces button {
+    box-shadow: none;
+    text-shadow: none;
+    padding: 0em;
+    margin-top: 0em;
+    margin-bottom: 0.3em;
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+    padding-left: 0.2em;
+    padding-right: 0.5em;
+    color: @main-fg;
+    border-style: dotted;
+    animation: ws_normal 20s ease-in-out 1;
+}
+
+#workspaces button.active {
+    background: @workspaces-button-act-bg;
+    color: @workspaces-button-act-fg;
+    border-style: solid;
+    border-color: @rosewater;
+    border-width: 0em 0.1em 0.1em;
+    animation: ws_active 20s ease-in-out 1;
+    transition: all 0.4s cubic-bezier(.55, -0.68, .48, 1.682);
+}
+
+#workspaces button:hover {
+    background: @workspaces-button-hvr-bg;
+    color: @workspaces-button-hvr-fg;
+    animation: ws_hover 20s ease-in-out 1;
+    transition: all 0.3s cubic-bezier(.55, -0.68, .48, 1.682);
+}
+
+#taskbar button {
+    box-shadow: none;
+    text-shadow: none;
+    padding: 0em;
+    margin-top: 0em;
+    margin-bottom: 0.3em;
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    border-style: dotted;
+    color: @wb-color;
+    animation: tb_normal 20s ease-in-out 1;
+}
+
+#taskbar button.active {
+    background: @taskbar-button-act-bg;
+    color: @taskbar-button-act-fg;
+    border-style: solid;
+    border-color: @rosewater;
+    border-width: 0em 0.1em 0.1em;
+    animation: tb_active 20s ease-in-out 1;
+    transition: all 0.4s cubic-bezier(.55, -0.68, .48, 1.682);
+}
+
+#taskbar button:hover {
+    background: @taskbar-button-hvr-bg;
+    color: @taskbar-button-hvr-fg;
+    animation: tb_hover 20s ease-in-out 1;
+    transition: all 0.3s cubic-bezier(.55, -0.68, .48, 1.682);
+}
+
+window#waybar.top .modules-left,
+window#waybar.top .modules-center,
+window#waybar.top .modules-right,
+window#waybar.bottom .modules-left,
+window#waybar.bottom .modules-center,
+window#waybar.bottom .modules-right {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+
+}
+
+window#waybar.top label.module,
+window#waybar.bottom label.module {
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+}
+
+window#waybar.top #pill-right .module {
+    padding-top: 0em;
+    padding-bottom: 0em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-left: 0em;
+    margin-right: 0em;
+    margin-bottom: 0.3em;
+    margin-top: 0em;
+}
+
+window#waybar.top #pill-right #workspaces {
+    border-style: solid;
+    border-left-width: 0em;
+    border-right-width: 0.1em;
+    padding-left: 0em;
+}
+
+window#waybar.top #pill-right #window {
+    padding-right: 0em;
+    padding-left: 0em;
+}
+
+window#waybar.top #pill-left label.module {
+    padding-top: 0em;
+    padding-bottom: 0em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-left: 0em;
+    margin-right: 0em;
+    margin-bottom: 0.3em;
+    margin-top: 0em;
+    border-style: dotted;
+    border-left-width: 0.05em;
+    border-right-width: 0.05em;
+    border-radius: 0 0 10pt 10pt;
+}
+
+window#waybar.top #pill-left #submap {
+    border-left-width: 0em;
+    border-radius: 0 0 10pt 0;
+    padding-left: 0em;
+}
+
+window#waybar.top #pill-left #custom-power {
+    border-right-width: 0em;
+    border-radius: 0 0 0 10pt;
+}
+
+window#waybar.top .modules-center #pill-in label.module {
+    padding-top: 0em;
+    padding-bottom: 0em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-left: 0em;
+    margin-right: 0em;
+    margin-bottom: 0.3em;
+    margin-top: 0em;
+    border-style: solid;
+    border-left-width: 0.05em;
+    border-right-width: 0.05em;
+    /* border-radius: 0 0 10pt 10pt; */
+}
+
+window#waybar.top .modules-center #pill-in #clock {
+    border-left-width: 0em;
+    /* border-radius: 0 0 10pt 0; */
+    padding-left: 0em;
+}
+
+window#waybar.top .modules-center #pill-in #custom-weather {
+    border-right-width: 0em;
+    /* border-radius: 0 0 0 10pt; */
+    padding-right: 0em;
+}
+
+window#waybar.top .modules-left #pill-in label.module {
+    padding-top: 0em;
+    padding-bottom: 0em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-left: 0em;
+    margin-right: 0em;
+    margin-bottom: 0.3em;
+    margin-top: 0em;
+    border-style: solid;
+    border-left-width: 0.05em;
+    border-right-width: 0.05em;
+    /* border-radius: 0 0 10pt 10pt; */
+}
+
+window#waybar.top .modules-left #pill-in #custom-media {
+    border-left-width: 0em;
+    /* border-radius: 0 0 10pt 0; */
+    padding-left: 0em;
+}
+
+window#waybar.top .modules-left #pill-in #cava {
+    border-right-width: 0em;
+    /* border-radius: 0 0 0 10pt; */
+    padding-right: 0em;
+}
+
+window#waybar.left label.module,
+window#waybar.right label.module {
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+tooltip {
+    /* all: unset; */
+    background: @main-bg;
+    color: @main-fg;
+    border-width: 0.1pt;
+}
+
+#tray menu * {
+    min-height: 1.6em;
+
+}
+
+#tray menu separator {
+    min-height: 0.1em;
+}
+
+#language {
+    min-width: 1.11em;
+}
+
+#temperature,
+#temperature.warning,
+#temperature.critical {
+    background-color: transparent;
+}

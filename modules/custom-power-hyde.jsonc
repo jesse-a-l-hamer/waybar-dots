@@ -1,0 +1,22 @@
+{
+    "custom/power#hyde": {
+        "format": "{0}",
+        "rotate": 0,
+        "tooltip": true,
+        "tooltip-format": " Logout menu",
+        "on-click": "app2unit -- wleave",
+        "menu": "on-click-right",
+        "menu-file": "$XDG_CONFIG_HOME/waybar/menus/power.xml",
+        "menu-actions": {
+            "lock": "sh -c '(sleep 0.5s; app2unit -- hyprlock --grace 10)' & disown",
+            "logout": "loginctl terminate-user \"\"",
+            "shutdown-now": "shutdown now",
+            "shutdown-wait": "systemctl poweroff",
+            "reboot-now": "systemctl reboot",
+            "reboot-firmware": "systemctl reboot --firmware-setup",
+            "suspend": "systemctl suspend",
+            "hibernate": "systemctl hibernate"
+        },
+        "interval": 86400
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "hyprland/workspaces": {
+        "all-outputs": true,
+        "sort-by": "default",
+        "format": " {icon} ",
+        "format-icons": {
+            "hud": "",
+            "home": "",
+            "default": ""
+        },
+        "move-to-monitor": true
+    }
+}

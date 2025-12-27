@@ -1,0 +1,4 @@
+// -*- mode: jsonc -*-
+{
+    "include": [ "$XDG_CONFIG_HOME/waybar/layouts/hyde.jsonc" ],
+}

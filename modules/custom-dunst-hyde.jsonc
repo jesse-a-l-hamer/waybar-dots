@@ -1,0 +1,44 @@
+{
+  "custom/dunst#hyde": {
+    "format": "{icon} {0}",
+    "rotate": 0,
+    "format-icons": {
+      "notification": "<span foreground='#ed8796'><sup></sup></span>",
+      "dnd-notification": "<span foreground='#ed8796'><sup></sup></span>",
+      "inhibited-notification": "<span foreground='#ed8796'><sup></sup></span>",
+      "inhibited-none": "",
+      "dnd-inhibited-notification": "<span foreground='#ed8796'><sup></sup></span>",
+      "dnd-inhibited-none": "",
+      "dnd-none": "",
+      "email-notification": "<span foreground='#cad3f5'><sup></sup></span>",
+      "chat-notification": "󱋊<span foreground='#cad3f5'><sup></sup></span>",
+      "warning-notification": "󱨪<span foreground='#eed49f'><sup></sup></span>",
+      "error-notification": "󱨪<span foreground='#ed8796'><sup></sup></span>",
+      "network-notification": "󱂇<span foreground='#cad3f5'><sup></sup></span>",
+      "battery-notification": "󰁺<span foreground='#cad3f5'><sup></sup></span>",
+      "update-notification": "󰚰<span foreground='#cad3f5'><sup></sup></span>",
+      "music-notification": "󰝚<span foreground='#cad3f5'><sup></sup></span>",
+      "volume-notification": "󰕿<span foreground='#cad3f5'><sup></sup></span>",
+      "dnd": "",
+      "none": ""
+    },
+    "return-type": "json",
+    // "exec-if": "which dunstctl",
+    "exec-if": "dunstctl  is-paused &> /dev/null", // This is to check if dunst is running
+    "exec": "python $XDG_CONFIG_HOME/dunst/scripts/notifications.py",
+    "on-scroll-down": "sleep 0.1 && dunstctl history-pop",
+    "on-click": "dunstctl set-paused toggle",
+    "on-click-middle": "dunstctl history-clear",
+    "interval": 1,
+    "tooltip": true,
+    "escape": true,
+    "menu": "on-click-right",
+    "menu-file": "$XDG_CONFIG_HOME/waybar/menus/dunst.xml",
+    "menu-actions": {
+      "show": "dunstctl history-pop",
+      "toggle-dnd": "dunstctl set-paused toggle",
+      "clear": "dunstctl history-clear",
+      "close-all": "dunstctl close-all"
+    }
+  }
+}

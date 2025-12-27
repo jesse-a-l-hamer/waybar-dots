@@ -1,0 +1,8 @@
+{
+    "custom/power": {
+        "format" : "⏻",
+        "tooltip": false,
+        "on-click": "app2unit -- wleave"
+    }
+}
+

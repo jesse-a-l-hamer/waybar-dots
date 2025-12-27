@@ -1,0 +1,153 @@
+@import "palettes/catppuccin-macchiato.css";
+
+* {
+  font-family: VictorMono Nerd Font Propo;
+  font-size: 16px;
+  min-height: 0;
+  opacity: 0.95;
+}
+
+#waybar {
+  background: transparent;
+  color: @text;
+  margin: 1rem;
+}
+
+#workspaces,
+#clock,
+#window,
+#custom-media,
+#pulseaudio,
+#network,
+#mpd,
+#cpu,
+#memory,
+#temperature,
+#backlight,
+#submap,
+#tray,
+#battery,
+#power-profiles-daemon,
+#idle_inhibitor,
+#custom-lock,
+#custom-power {
+  background-color: @surface0;
+  padding: 0.25rem 1rem;
+  margin: 1rem 0;
+}
+
+#workspaces {
+  border-radius: 1rem;
+  margin: 1rem;
+}
+
+#workspaces button {
+  color: @lavender;
+  border-radius: 1rem;
+  padding: 0.4rem;
+}
+
+#workspaces button:hover {
+  color: @pink;
+  border-radius: 1rem;
+}
+
+#workspaces button.active {
+  color: @flamingo;
+  border-radius: 1rem;
+}
+
+#workspaces button.special {
+  color: @yellow;
+  border-radius: 1rem;
+}
+
+#clock {
+  color: @flamingo;
+  font-style: italic;
+  margin-left: 1rem;
+  border-radius: 1rem 0px 0px 1rem;
+}
+
+#window {
+  color: @flamingo;
+  font-style: normal;
+  margin-right: 1rem;
+  border-radius: 0px 1rem 1rem 0px;
+}
+
+#custom-media {
+  color: @mauve;
+  border-radius: 1rem;
+}
+
+#pulseaudio {
+  color: @maroon;
+  border-radius: 1rem 0px 0px 1rem;
+  margin-left: 1rem;
+}
+
+#network {
+  color: @blue;
+}
+
+#mpd {
+  color: @mauve;
+}
+
+#cpu, #memory, #temperature {
+  color: @sky;
+}
+
+#backlight {
+  color: @yellow;
+}
+
+#backlight {
+  border-radius: 0;
+}
+
+#submap {
+  color: @peach;
+  margin-right: 1rem;
+  border-radius: 0px 1rem 1rem 0px;
+}
+
+#tray {
+  margin: 1rem;
+  border-radius: 1rem;
+  color: @rosewater;
+}
+
+#battery {
+  color: @green;
+  margin-left: 1rem;
+  border-radius: 1rem 0px 0px 1rem;
+}
+
+#battery.charging {
+  color: @green;
+}
+
+#battery.warning:not(.charging) {
+  color: @red;
+}
+
+#power-profiles-daemon {
+  color: @yellow;
+}
+
+#idle_inhibitor {
+  color: @yellow;
+}
+
+#custom-lock {
+  color: @peach;
+}
+
+#custom-power  {
+  color: @red;
+  margin-right: 1rem;
+  border-radius: 0px 1rem 1rem 0px;
+}
+
