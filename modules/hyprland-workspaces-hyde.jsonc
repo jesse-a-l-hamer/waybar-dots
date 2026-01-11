@@ -8,8 +8,8 @@
         "on-scroll-down": "hyprctl dispatch workspace +1",
         "format": "{icon}",
         "format-icons": {
-            "hud": "  ",
             "home": "  ",
+            "2": " 󰲣 ",
             "3": " 󰲥 ",
             "4": " 󰲧 ",
             "5": " 󰲩 ",
