@@ -23,7 +23,7 @@
   },
   "group/pill-in#left": {
     "orientation": "inherit",
-    "modules": ["custom/media#hyde", "cava#hyde"]
+    "modules": ["custom/media#hyde"]
   },
   "group/pill-in#center": {
     "orientation": "inherit",

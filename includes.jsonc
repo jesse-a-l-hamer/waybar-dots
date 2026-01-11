@@ -4,7 +4,6 @@
         "$XDG_CONFIG_HOME/waybar/modules/backlight.jsonc",
         "$XDG_CONFIG_HOME/waybar/modules/battery.jsonc",
         "$XDG_CONFIG_HOME/waybar/modules/bluetooth-hyde.jsonc",
-        "$XDG_CONFIG_HOME/waybar/modules/cava-hyde.jsonc",
         "$XDG_CONFIG_HOME/waybar/modules/clock.jsonc",
         "$XDG_CONFIG_HOME/waybar/modules/cpu.jsonc",
         "$XDG_CONFIG_HOME/waybar/modules/cpu-hyde.jsonc",
