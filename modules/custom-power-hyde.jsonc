@@ -9,7 +9,7 @@
         "menu-file": "$XDG_CONFIG_HOME/waybar/menus/power.xml",
         "menu-actions": {
             "lock": "sh -c '(sleep 0.5s; app2unit -- hyprlock --grace 10)' & disown",
-            "logout": "loginctl terminate-user \"\"",
+            "logout": "uwsm stop",
             "shutdown-now": "shutdown now",
             "shutdown-wait": "systemctl poweroff",
             "reboot-now": "systemctl reboot",
