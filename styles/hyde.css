@@ -45,7 +45,7 @@
 /* Base HyDE Styles */
 
 window#waybar {
-    background: @bar-bg;
+    background: none;
 }
 
 .module {
@@ -276,7 +276,34 @@ window#waybar.top #pill-left label.module {
     border-radius: 0 0 10pt 10pt;
 }
 
-window#waybar.top #pill-left #submap {
+window#waybar.top .modules-right #pill-in label.module {
+    padding-top: 0em;
+    padding-bottom: 0em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-left: 0em;
+    margin-right: 0em;
+    margin-bottom: 0.3em;
+    margin-top: 0em;
+    border-style: dotted;
+    border-left-width: 0.05em;
+    border-right-width: 0.05em;
+    border-radius: 0 0 10pt 10pt;
+}
+
+window#waybar.top .modules-right #pill-in #submap {
+    border-left-width: 0em;
+    border-radius: 0 0 10pt 0;
+    padding-left: 0em;
+}
+
+window#waybar.top .modules-right #pill-in #power-profiles-daemon {
+    border-right-width: 0em;
+    border-radius: 0 0 0 10pt;
+    padding-right: 0em;
+}
+
+window#waybar.top #pill-left #cpu {
     border-left-width: 0em;
     border-radius: 0 0 10pt 0;
     padding-left: 0em;
@@ -303,12 +330,18 @@ window#waybar.top .modules-center #pill-in label.module {
 }
 
 window#waybar.top .modules-center #pill-in #clock {
+    /* border-right-width: 0em; */
+    /* border-radius: 0 0 0 10pt; */
+    /* padding-right: 0em; */
+}
+
+window#waybar.top .modules-center #pill-in #custom-weather {
     border-left-width: 0em;
     /* border-radius: 0 0 10pt 0; */
     padding-left: 0em;
 }
 
-window#waybar.top .modules-center #pill-in #custom-weather {
+window#waybar.top .modules-center #pill-in #custom-dunst {
     border-right-width: 0em;
     /* border-radius: 0 0 0 10pt; */
     padding-right: 0em;
@@ -335,10 +368,11 @@ window#waybar.top .modules-left #pill-in #custom-media {
     padding-left: 0em;
 }
 
-window#waybar.top .modules-left #pill-in #cava {
+window#waybar.top .modules-left #pill-in #tray {
     border-right-width: 0em;
     /* border-radius: 0 0 0 10pt; */
     padding-right: 0em;
+    padding-left: 0.5em;
 }
 
 window#waybar.left label.module,
