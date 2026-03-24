@@ -51,7 +51,7 @@
       // "backlight",
       "cpu#hyde",
       "memory#hyde",
-      // "battery",
+      "battery",
       "temperature",
       "custom/power#hyde"
     ]
