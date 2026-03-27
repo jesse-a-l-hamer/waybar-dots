@@ -1,0 +1,7 @@
+{
+    "custom/app_drawer": {
+        "format": " 󰀻 ",
+        "on-click": "$XDG_CONFIG_HOME/waybar/scripts/toggle_nwg-drawer.sh",
+        "tooltip": false
+    }
+}

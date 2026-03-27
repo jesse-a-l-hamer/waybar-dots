@@ -7,6 +7,7 @@
         "$XDG_CONFIG_HOME/waybar/modules/clock.jsonc",
         "$XDG_CONFIG_HOME/waybar/modules/cpu.jsonc",
         "$XDG_CONFIG_HOME/waybar/modules/cpu-hyde.jsonc",
+        "$XDG_CONFIG_HOME/waybar/modules/custom-app_drawer.jsonc",
         "$XDG_CONFIG_HOME/waybar/modules/custom-dunst-hyde.jsonc",
         "$XDG_CONFIG_HOME/waybar/modules/custom-lock.jsonc",
         "$XDG_CONFIG_HOME/waybar/modules/custom-media.jsonc",

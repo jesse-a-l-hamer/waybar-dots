@@ -17,6 +17,7 @@
     "orientation": "inherit",
     "modules": [
       "hyprland/workspaces#hyde",
+      "custom/app_drawer",
       "wlr/taskbar#hyde",
       "hyprland/window"
     ]

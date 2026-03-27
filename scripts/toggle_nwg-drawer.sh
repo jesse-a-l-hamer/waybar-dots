@@ -1,0 +1,1 @@
+/home/jalhamer/.scripts/toggle_nwg-drawer.sh
