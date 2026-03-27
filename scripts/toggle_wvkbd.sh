@@ -1,0 +1,1 @@
+/home/jalhamer/.scripts/toggle_wvkbd.sh

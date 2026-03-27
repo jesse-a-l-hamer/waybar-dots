@@ -3,7 +3,8 @@
         "format": "  {}",
         "tooltip": false,
         "always-on": true,
-        "default-submap": "Default"
+        "default-submap": "Default",
+        "on-click": "$XDG_CONFIG_HOME/waybar/scripts/toggle_wvkbd.sh"
     }
 }
 
